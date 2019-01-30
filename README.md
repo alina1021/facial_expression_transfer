@@ -3,23 +3,33 @@
 This is a pix2pix demo that learns from facial landmarks and translates this into a face. A webcam-enabled application is also provided that translates your face to the trained face in real-time.
 
 This project comes in three repositories. This repository, for general purpose scripts and documentation, and a forked version of the [face2face](https://github.com/datitran/face2face-demo) and [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow)  repositories. 
-# The presentation slides for this project are provided as [Google Slides (https://docs.google.com/presentation/d/10UUUsJWL2R0r9y5FpoIfv9wJboyUFt7svuSvhGRsmZ8/edit?usp=sharing).
 
 ## Getting Started
 
 ### 1. Prepare Environment
 
+- Clone this repository
 ```
-# Clone this repo
 git clone https://github.com/alina1021/facial_expression_transfer.git --recursive
+cd facial_expression_transfer
+```
 
-# Create the conda environment from file (Mac OSX)
+- Create the conda environment from file (Mac OSX)
+```
 conda env create -f environment.yml
 ```
-
+- Clone the forked version of the [face2face-demo](https://github.com/alina1021/face2face-demo.git) repository:
+```
+git clone https://github.com/alina1021/face2face-demo.git
+```
+- Clone the forked version of the [pix2pix-tensorflow](https://github.com/alina1021/pix2pix-tensorflow.git) repository from Christopher Hesse's pix2pix TensorFlow implementation:
+```
+git clone https://github.com/alina1021/pix2pix-tensorflow.git
+```
 ### 2. Generate Training Data
 
 ```
+cd face2face-demo
 python generate_train_data.py --file angela_merkel_speech.mp4 --num 400 --landmark-model shape_predictor_68_face_landmarks.dat
 ```
 
@@ -33,14 +43,12 @@ Output:
 
 - Two folders `original` and `landmarks` will be created.
 
-If you want to download my dataset, here is also the [video file](https://u7410512.dl.dropboxusercontent.com/u/7410512/face2face-demo/angela_merkel_speech.mp4) that I used and the generated [training dataset](https://u7410512.dl.dropboxusercontent.com/u/7410512/face2face-demo/dataset.zip) (400 images already split into training and validation).
+If you want to download this dataset, here is also the [video file](https://u7410512.dl.dropboxusercontent.com/u/7410512/face2face-demo/angela_merkel_speech.mp4) that I used and the generated [training dataset](https://u7410512.dl.dropboxusercontent.com/u/7410512/face2face-demo/dataset.zip) (400 images already split into training and validation).
 
 ### 3. Train Model
 
 ```
-# Clone the repo from Christopher Hesse's pix2pix TensorFlow implementation
-git clone https://github.com/affinelayer/pix2pix-tensorflow.git
-
+cd ..
 # Move the original and landmarks folder into the pix2pix-tensorflow folder
 mv face2face-demo/landmarks face2face-demo/original pix2pix-tensorflow/photos
 
@@ -87,7 +95,7 @@ For more information around training, have a look at Christopher Hesse's [pix2pi
 
 1. First, we need to reduce the trained model so that we can use an image tensor as input:
     ```
-    python ../reduce_model.py --model-input face2face-model --model-output face2face-reduced-model
+    python ../face2face-demo/reduce_model.py --model-input face2face-model --model-output face2face-reduced-model
     ```
 
     Input:
@@ -101,7 +109,7 @@ For more information around training, have a look at Christopher Hesse's [pix2pi
 
 2. Second, we freeze the reduced model to a single file.
     ```
-    python ../freeze_model.py --model-folder face2face-reduced-model
+    python ../face2face-demo/freeze_model.py --model-folder face2face-reduced-model
     ```
 
     Input:
@@ -115,6 +123,7 @@ For more information around training, have a look at Christopher Hesse's [pix2pi
 ### 5. Run Demo
 
 ```
+cd ../face2face-demo
 python run_webcam.py --source 0 --show 0 --landmark-model shape_predictor_68_face_landmarks.dat --tf-model face2face-reduced-model/frozen_model.pb
 ```
 
@@ -132,8 +141,6 @@ Input:
 ### Dat Tran - Angela Merkel 256x256
 
 ![example](example.gif)
-
-**THIS MODEL WILL NOT WORK WITH THIS CODE**
 
 Pre-trained frozen model [here](https://dl.dropboxusercontent.com/s/rzfaoeb3e2ta343/face2face_model_epoch_200.zip). This model is trained on 400 images with epoch 200.
 
