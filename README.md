@@ -17,6 +17,8 @@ cd facial_expression_transfer
 - Create the conda environment from file (Mac OSX)
 ```
 conda env create -f environment.yml
+# activate this environment
+conda activate facial_expression_transfer
 ```
 - Clone the forked version of the [face2face-demo](https://github.com/alina1021/face2face-demo.git) repository:
 ```
