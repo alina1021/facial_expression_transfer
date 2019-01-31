@@ -32,7 +32,7 @@ git clone https://github.com/alina1021/pix2pix-tensorflow.git
 
 ```
 cd face2face-demo
-python generate_train_data.py --file angela_merkel_speech.mp4 --num 400 --landmark-model shape_predictor_68_face_landmarks.dat
+python generate_train_data.py --file ../angela_merkel_speech.mp4 --num 400 --landmark-model ../shape_predictor_68_face_landmarks.dat
 ```
 
 Input:
@@ -52,7 +52,10 @@ If you want to download this dataset, here is also the [video file](https://u741
 ```
 cd ..
 # Move the original and landmarks folder into the pix2pix-tensorflow folder
-mv face2face-demo/landmarks face2face-demo/original pix2pix-tensorflow/photos
+mkdir pix2pix-tensorflow/photos
+mv face2face-demo/original pix2pix-tensorflow/photos/original
+mv face2face-demo/landmarks pix2pix-tensorflow/photos/landmarks
+rm -rf face2face-demo/landmarks
 
 # Go into the pix2pix-tensorflow folder
 cd pix2pix-tensorflow/
@@ -126,7 +129,7 @@ For more information around training, have a look at Christopher Hesse's [pix2pi
 
 ```
 cd ../face2face-demo
-python run_webcam.py --source 0 --show 0 --landmark-model shape_predictor_68_face_landmarks.dat --tf-model face2face-reduced-model/frozen_model.pb
+python run_webcam.py --source 0 --show 0 --landmark-model ../shape_predictor_68_face_landmarks.dat --tf-model ../pix2pix-tensorflow/face2face-reduced-model/frozen_model.pb
 ```
 
 Input:
