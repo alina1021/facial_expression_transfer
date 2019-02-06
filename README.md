@@ -146,7 +146,12 @@ For more information around training and testing, have a look at Christopher Hes
 
 ```
 cd ../face2face-demo
+
+# run webcam
 python run_webcam.py --source 0 --show 1 --landmark-model ../shape_predictor_68_face_landmarks.dat --tf-model ../pix2pix-tensorflow/face2face-reduced-model/frozen_model.pb
+
+# run recorded video
+python run_video.py --source ../my_video.mov --show 1 --landmark-model ../shape_predictor_68_face_landmarks.dat --tf-model ../pix2pix-tensorflow/face2face-reduced-model/frozen_model.pb
 ```
 
 Input:
