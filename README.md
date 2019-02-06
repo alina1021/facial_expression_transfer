@@ -92,9 +92,28 @@ python pix2pix.py \
   --which_direction AtoB
 ```
 
-For more information around training, have a look at Christopher Hesse's [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) implementation.
+### 4. Test Model / Validation
 
-### 4. Export Model
+Testing is done with `--mode test`. You should specify the checkpoint to use with `--checkpoint`, this should point to the output_dir that you created previously with `--mode` train:
+
+```
+# test the model
+python pix2pix.py \
+  --mode test \
+  --output_dir face2face_test \
+  --input_dir photos/combined/val \
+  --checkpoint face2face-model
+```
+
+The testing mode will load some of the configuration options from the checkpoint provided so you do not need to specify which_direction for instance.
+
+The test run will output an HTML file at face2face_test/index.html that shows input/output/target image sets like the following:
+
+![input/output/target](example-merkel.gif)
+
+For more information around training and testing, have a look at Christopher Hesse's [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) implementation.
+
+### 5. Export Model
 
 1. First, we need to reduce the trained model so that we can use an image tensor as input:
     ```
@@ -123,7 +142,7 @@ For more information around training, have a look at Christopher Hesse's [pix2pi
 
     - It returns a frozen model file `frozen_model.pb` in the model folder.
 
-### 5. Run Demo
+### 6. Run Demo
 
 ```
 cd ../face2face-demo
