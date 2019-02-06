@@ -156,7 +156,7 @@ Me, my face and output:
 
 Video on youtube:
 
-[![Face2Face Krzysztof Gonciarz YAPZTAJ KASIĘ CICHOPEK 4 - Zapytaj Beczkę #146](http://img.youtube.com/vi/v5VDJKCrP6A/0.jpg)](http://www.youtube.com/watch?v=v5VDJKCrP6A)
+[![Face2Face Krzysztof Gonciarz YAPZTAJ KASIĘ CICHOPEK 4 - Zapytaj Beczkę #146]()](https://drive.google.com/file/d/18Z0CHC8DUcy-dWK9L0IgPuCO-_a696KH/view?usp=sharing)
 
 Frozen model can be downloaded from [here](https://drive.google.com/file/d/1C5bN5J6_W9Zxs304nMyFiByieqbH-w_J/view?usp=sharing). This model is trained on 400 images with epoch 200.
 
