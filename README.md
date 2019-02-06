@@ -32,7 +32,7 @@ git clone https://github.com/alina1021/pix2pix-tensorflow.git
 
 ```
 cd face2face-demo
-python generate_train_data.py --file ../angela_merkel_speech.mp4 --num 400 --landmark-model ../shape_predictor_68_face_landmarks.dat
+python generate_train_data.py --file ../iohannis_christmas_speech.mp4 --num 400 --landmark-model ../shape_predictor_68_face_landmarks.dat
 ```
 
 Input:
@@ -45,7 +45,7 @@ Output:
 
 - Two folders `original` and `landmarks` will be created.
 
-If you want to download this dataset, here is also the [video file](https://u7410512.dl.dropboxusercontent.com/u/7410512/face2face-demo/angela_merkel_speech.mp4) that I used and the generated [training dataset](https://u7410512.dl.dropboxusercontent.com/u/7410512/face2face-demo/dataset.zip) (400 images already split into training and validation).
+If you want to download this dataset, here is also the [video file](https://drive.google.com/file/d/1JGN6uulKeRS6adWbRHmIDaWKcrmKyRKq/view?usp=sharing) that I used and the generated [training dataset](https://drive.google.com/file/d/1KXfM_aC5GCRFKYls62r_sEpHV6nipOW-/view?usp=sharing) (400 images already split into training and validation).
 
 ### 3. Train Model
 
@@ -64,14 +64,12 @@ cd pix2pix-tensorflow/
 python tools/process.py \
   --input_dir photos/original \
   --operation resize \
-  --size 1024 \
   --output_dir photos/original_resized
 
 # Resize landmark images
 python tools/process.py \
   --input_dir photos/landmarks \
   --operation resize \
-  --size 1024 \
   --output_dir photos/landmarks_resized
 
 # Combine both resized original and landmark images
@@ -129,13 +127,13 @@ For more information around training, have a look at Christopher Hesse's [pix2pi
 
 ```
 cd ../face2face-demo
-python run_webcam.py --source 0 --show 0 --landmark-model ../shape_predictor_68_face_landmarks.dat --tf-model ../pix2pix-tensorflow/face2face-reduced-model/frozen_model.pb
+python run_webcam.py --source 0 --show 1 --landmark-model ../shape_predictor_68_face_landmarks.dat --tf-model ../pix2pix-tensorflow/face2face-reduced-model/frozen_model.pb
 ```
 
 Input:
 
 - `source` is the device index of the camera (default=0).
-- `show` is an option to either display the normal input (0) or the facial landmark (1) alongside the generated image (default=0).
+- `show` is an option to either display the normal input (0) or the normal input and the facial landmark (1) alongside the generated image (default=0).
 - `landmark-model` is the facial landmark model that is used to detect the landmarks.
 - `tf-model` is the frozen model file.
 
@@ -143,24 +141,24 @@ Input:
 
 ## Models
 
-### Dat Tran - Angela Merkel 256x256
+### Gianina Alina Negoita - Angela Merkel 256x256
 
-![example](example.gif)
+![example](example-merkel.gif)
 
-Pre-trained frozen model [here](https://dl.dropboxusercontent.com/s/rzfaoeb3e2ta343/face2face_model_epoch_200.zip). This model is trained on 400 images with epoch 200.
+Pre-trained frozen model [here](https://drive.google.com/file/d/17Fg6J3Yhx9baETarhNNbRcLaJmdNRUE_/view?usp=sharing). This model is trained on 400 images with epoch 200.
 
-### Karol Majek - Krzysztof Gonciarz 1024x1024
+### Gianin Alina Negoita - Klaus Iohannis 256x256
 
 Me, my face and output:
 
-![Face2Face Gonciarz](example-gonciarz.gif)
+![Face2Face Iohannis](example-iohannis.gif)
 
 
 Video on youtube:
 
 [![Face2Face Krzysztof Gonciarz YAPZTAJ KASIĘ CICHOPEK 4 - Zapytaj Beczkę #146](http://img.youtube.com/vi/v5VDJKCrP6A/0.jpg)](http://www.youtube.com/watch?v=v5VDJKCrP6A)
 
-Frozen model can be downloaded from [here](https://goo.gl/8BgnXA) (1.1GB)
+Frozen model can be downloaded from [here](https://drive.google.com/file/d/1C5bN5J6_W9Zxs304nMyFiByieqbH-w_J/view?usp=sharing). This model is trained on 400 images with epoch 200.
 
 ## Requirements
 - [Anaconda / Python 3.5](https://www.continuum.io/downloads)
@@ -175,4 +173,4 @@ Thanks to [Dat Tran](http://www.dat-tran.com/) for inspiration, code and model!
 ## Copyright
 
 See [LICENSE](LICENSE) for details.
-Copyright (c) 2017 [Dat Tran](http://www.dat-tran.com/).
+
