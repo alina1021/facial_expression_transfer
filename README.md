@@ -143,6 +143,8 @@ Input:
 
 ### Gianina Alina Negoita - Angela Merkel 256x256
 
+Me, my face and output:
+
 ![Face2Face Iohannis](example-merkel.gif)
 
 Pre-trained frozen model [here](https://drive.google.com/file/d/17Fg6J3Yhx9baETarhNNbRcLaJmdNRUE_/view?usp=sharing). This model is trained on 400 images with epoch 200.
