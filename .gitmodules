@@ -1,3 +1,6 @@
 [submodule "pix2pix-tensorflow"]
 	path = pix2pix-tensorflow
 	url = https://github.com/alina1021/pix2pix-tensorflow.git
+[submodule "face2face-demo"]
+	path = face2face-demo
+	url = https://github.com/alina1021/face2face-demo.git
