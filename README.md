@@ -109,7 +109,7 @@ The testing mode will load some of the configuration options from the checkpoint
 
 The test run will output an HTML file at face2face_test/index.html that shows input/output/target image sets like the following:
 
-![input/output/target](images/10-inputs.gif)(images/10-outputs.gif)(images/10-targets.gif)
+![input/output/target](images/10-inputs.png)(images/10-outputs.png)(images/10-targets.png)
 
 For more information around training and testing, have a look at Christopher Hesse's [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) implementation.
 
