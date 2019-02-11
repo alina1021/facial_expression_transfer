@@ -2,7 +2,11 @@
 
 This is a pix2pix demo that learns from facial landmarks and translates this into a face. A webcam-enabled application is also provided that translates your face to the trained face in real-time.
 
-This project comes in three repositories. This repository, for general purpose scripts and documentation, and a forked version of the [face2face](https://github.com/datitran/face2face-demo) and [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow)  repositories added as submodules. 
+This project comes in three repositories. This repository, for general purpose scripts and documentation, and a forked version of the [face2face](https://github.com/datitran/face2face-demo) and [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow)  repositories added as submodules. The presentation slides for this project are provided as [Google Slides](https://bit.ly/2TzdxPB).
+
+<p align='center'>  
+  <img src='images/pipeline.png' width='640'/>  
+</p>
 
 ## Getting Started
 
@@ -186,6 +190,7 @@ Thanks to [Dat Tran](http://www.dat-tran.com/) for inspiration, code and model!
 For training and testing, thanks to Christopher Hesse for [Image-to-Image Translation in Tensorflow](https://affinelayer.com/pix2pix/) code and examples.
 
 Thanks also to Phillip Isola<sup>1</sup>, Jun-Yan Zhu<sup>1</sup>, Tinghui Zhou<sup>1</sup>, and Alexei A Efros<sup>1</sup> for their fantastic work on [Image-to-Image Translation Using Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004v1.pdf). 
+
 <sup>1</sup> Berkeley AI Research (BAIR) Laboratory, University of California, Berkeley
 
 ## Copyright
