@@ -95,8 +95,7 @@ See the Pix2Pix model graph in TensorFlow below:
 
 Here are now some results for the discriminator and generator loss functions as a function of step number at epoch 200 when using 400 frame. Note the learning process for both the discriminator and generator was quite noisy and it gets better after more steps. 
 <p align='center'>  
-  <img src='images/discriminator_loss_1.png' src='images/generator_loss_GAN.png'width='640'/>  
-  <img src='images/generator_loss_GAN.png' width='640'/>  
+  <img src='images/discriminator_loss_1.png' src='images/generator_loss_GAN.png'width='640'/>   
 </p>
 
 ### 4. Test Model / Validation
