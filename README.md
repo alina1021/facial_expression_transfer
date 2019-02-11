@@ -156,7 +156,7 @@ Input:
 - `show` is an option to either display the normal input (0) or the normal input and the facial landmark (1) alongside the generated image (default=0).
 - `landmark-model` is the facial landmark model that is used to detect the landmarks.
 - `tf-model` is the frozen model file.
-I provide my recorded video, my_video.mov file, [here](https://drive.google.com/file/d/1YH2b88ot5nmVQ7ZucKuwYLW3c3uZKvbs/view?usp=sharing).
+-  I provide my recorded video, my_video.mov file, [here](https://drive.google.com/file/d/1YH2b88ot5nmVQ7ZucKuwYLW3c3uZKvbs/view?usp=sharing).
 
 
 
