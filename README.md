@@ -8,7 +8,7 @@ This project comes in three repositories. This repository, for general purpose s
 
 ### 1. Prepare Environment
 
-- Clone this repository
+- Clone this repository recursively to include the two fork repos mentioned above.
 ```
 git clone https://github.com/alina1021/facial_expression_transfer.git --recursive
 cd facial_expression_transfer
@@ -19,14 +19,6 @@ cd facial_expression_transfer
 conda env create -f environment.yml
 # activate this environment
 conda activate facial_expression_transfer
-```
-- Clone the forked version of the [face2face-demo](https://github.com/alina1021/face2face-demo.git) repository:
-```
-git clone https://github.com/alina1021/face2face-demo.git
-```
-- Clone the forked version of the [pix2pix-tensorflow](https://github.com/alina1021/pix2pix-tensorflow.git) repository from Christopher Hesse's pix2pix TensorFlow implementation:
-```
-git clone https://github.com/alina1021/pix2pix-tensorflow.git
 ```
 ### 2. Generate Training Data
 
@@ -189,7 +181,11 @@ Frozen model can be downloaded from [here](https://drive.google.com/file/d/1C5bN
 
 ## Acknowledgments
 
-Thanks to [Dat Tran](http://www.dat-tran.com/) for inspiration, code and model!
+Thanks to [Dat Tran](http://www.dat-tran.com/) for inspiration, code and model! 
+For training and testing, thanks to Christopher Hesse's [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) code and examples.
+Thanks also to Phillip Isola<sup>1</sup>, Jun-Yan Zhu<sup>1</sup>, Tinghui Zhou<sup>1</sup>, and Alexei A Efros<sup>1</sup> for their fantastic work on [Image-to-Image Translation Using Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004v1.pdf). 
+
+<sup>1</sup> Berkeley AI Research (BAIR) Laboratory, University of California, Berkeley
 
 ## Copyright
 
