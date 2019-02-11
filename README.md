@@ -90,12 +90,13 @@ python pix2pix.py \
 Training the model was done on AWS could service using EC2 p2.xlarge instances. The p2.xlarge instance has 1 NVIDIA K80 GPU with 2,496 parallel processing cores. The training takes up to 8 hours depending the actual settings like number of frames, epochs, etc... For example, training the model using 400 frames (320 for training and 80 for validation) and 200 epochs, takes about 5 hours on 1 NVIDIA K80 GPU. The Training on CPU was excluded right away since it takes 3-5 days with the above settings, depending on the CPU type.  
 See the Pix2Pix model graph in TensorFlow below:
 <p align='center'>  
-  <img src='images/model_graph.png' width='720'/>  
+  <img src='images/model_graph.png' width='840'/>  
 </p>
 
 Here are now some results for the discriminator and generator loss functions as a function of step number at epoch 200 when using 400 frame. Note the learning process for both the discriminator and generator was quite noisy and it gets better after more steps. 
 <p align='center'>  
-  <img src='images/discriminator_loss_1.png' src='images/generator_loss_GAN.png'width='640'/>   
+  <img1 src='images/discriminator_loss_1.png' width='320'/>   
+  <img2 src='images/generator_loss_GAN.png' width='320'/> 
 </p>
 
 ### 4. Test Model / Validation
