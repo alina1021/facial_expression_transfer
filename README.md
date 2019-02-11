@@ -165,11 +165,11 @@ Input:
 
 ## Models
 
-### Gianina Alina Negoita - Angela Merkel 256x256
+### Gianina Alina Negoita - Maluma 256x256
 
 Me, my face and output:
 
-![Face2Face Iohannis](example-merkel.gif)
+![Face2Face Maluma](images/alina-maluma.gif)
 
 Pre-trained frozen model [here](https://drive.google.com/file/d/17Fg6J3Yhx9baETarhNNbRcLaJmdNRUE_/view?usp=sharing). This model is trained on 400 images with epoch 200.
 
@@ -177,7 +177,7 @@ Pre-trained frozen model [here](https://drive.google.com/file/d/17Fg6J3Yhx9baETa
 
 Me, my face and output:
 
-![Face2Face Iohannis](example-iohannis.gif)
+![Face2Face Iohannis](images/alina_iohannis.gif)
 
 Frozen model can be downloaded from [here](https://drive.google.com/file/d/1C5bN5J6_W9Zxs304nMyFiByieqbH-w_J/view?usp=sharing). This model is trained on 400 images with epoch 200.
 
