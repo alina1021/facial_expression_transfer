@@ -182,7 +182,7 @@ Frozen model can be downloaded from [here](https://drive.google.com/file/d/1C5bN
 ## Acknowledgments
 
 Thanks to [Dat Tran](http://www.dat-tran.com/) for inspiration, code and model! 
-For training and testing, thanks to Christopher Hesse's [pix2pix-tensorflow](https://github.com/affinelayer/pix2pix-tensorflow) code and examples.
+For training and testing, thanks to Christopher Hesse's [Image-to-Image Translation in Tensorflow](https://affinelayer.com/pix2pix/) code and examples.
 Thanks also to Phillip Isola<sup>1</sup>, Jun-Yan Zhu<sup>1</sup>, Tinghui Zhou<sup>1</sup>, and Alexei A Efros<sup>1</sup> for their fantastic work on [Image-to-Image Translation Using Conditional Adversarial Networks](https://arxiv.org/pdf/1611.07004v1.pdf). 
 
 <sup>1</sup> Berkeley AI Research (BAIR) Laboratory, University of California, Berkeley
