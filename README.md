@@ -141,21 +141,22 @@ For more information around training and testing, have a look at Christopher Hes
 ### 6. Run Demo
 
 ```
-cd ../face2face-demo
-
-# run webcam
-python run_webcam.py --source 0 --show 1 --landmark-model ../shape_predictor_68_face_landmarks.dat --tf-model ../pix2pix-tensorflow/face2face-reduced-model/frozen_model.pb
+cd ..
 
 # run recorded video
-python run_video.py --source ../my_video.mov --show 1 --landmark-model ../shape_predictor_68_face_landmarks.dat --tf-model ../pix2pix-tensorflow/face2face-reduced-model/frozen_model.pb
+python scripts/run_video.py --source my_video.mov --show 1 --landmark-model ../shape_predictor_68_face_landmarks.dat --tf-model pix2pix-tensorflow/face2face-reduced-model/frozen_model.pb
+
+# run webcam
+python scripts/run_webcam.py --source 0 --show 1 --landmark-model ../shape_predictor_68_face_landmarks.dat --tf-model pix2pix-tensorflow/face2face-reduced-model/frozen_model.pb
 ```
 
 Input:
 
-- `source` is the device index of the camera (default=0).
+- `source` is your video or the device index of the camera (default=0)
 - `show` is an option to either display the normal input (0) or the normal input and the facial landmark (1) alongside the generated image (default=0).
 - `landmark-model` is the facial landmark model that is used to detect the landmarks.
 - `tf-model` is the frozen model file.
+I provide my recorded video, my_video.mov file, [here](https://drive.google.com/file/d/1YH2b88ot5nmVQ7ZucKuwYLW3c3uZKvbs/view?usp=sharing).
 
 
 
