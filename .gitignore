@@ -13,7 +13,6 @@ angela_merkel_speech.mp4
 shape_predictor_68_face_landmarks.dat
 
 *.mp4
-*.gif
 *.bz2
 tmp*
 *.pb
