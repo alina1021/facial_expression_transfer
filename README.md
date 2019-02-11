@@ -12,7 +12,7 @@ This project comes in three repositories. This repository, for general purpose s
 
 ### 1. Prepare Environment
 
-- Clone this repository recursively to include the two fork repos mentioned above.
+- Clone this repository recursively to include the two forked repositories mentioned above.
 ```
 git clone https://github.com/alina1021/facial_expression_transfer.git --recursive
 cd facial_expression_transfer
