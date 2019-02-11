@@ -171,7 +171,7 @@ Me, my face and output:
 
 ![Face2Face Maluma](images/alina-maluma.gif)
 
-Pre-trained frozen model [here](https://drive.google.com/file/d/17Fg6J3Yhx9baETarhNNbRcLaJmdNRUE_/view?usp=sharing). This model is trained on 400 images with epoch 200.
+Pre-trained frozen model [here](https://drive.google.com/file/d/1FZ1RL9BCIulKMrX_v2hicYLv80SB55ws/view?usp=sharing). This model is trained on 400 images with epoch 200.
 
 ### Gianin Alina Negoita - Klaus Iohannis 256x256
 
