@@ -93,7 +93,7 @@ See the Pix2Pix model graph in TensorFlow below:
   <img src='images/model_graph.png' width='1024'/>  
 </p>
 
-Here are now some results for the discriminator (left) and generator (right) loss functions as a function of step number at epoch 200 when using 400 frame. Note the learning process for both the discriminator and generator was quite noisy and it gets better after more steps. 
+Here are now some results for the discriminator (left) and generator (right) loss functions as a function of step number at epoch 200 when using 400 frames. Note the learning process for both the discriminator and generator was quite noisy and it gets better after more steps. 
 <p align='center'>  
   <img src='images/discriminator_loss_1.png' width='400'/>   
   <img src='images/generator_loss_GAN.png' width='400'/> 
@@ -187,6 +187,8 @@ Me, my face and output:
 ![Face2Face Iohannis](images/alina_iohannis.gif)
 
 Frozen model can be downloaded from [here](https://drive.google.com/file/d/1C5bN5J6_W9Zxs304nMyFiByieqbH-w_J/view?usp=sharing). This model is trained on 400 images with epoch 200.
+
+Increasing the number of epochs will help to reduce the pixelation and blurriness. Also, training with more data will improve the results and have the objects in the background not move during facial expression transfer.
 
 ## Requirements
 - [Anaconda / Python 3.5](https://www.continuum.io/downloads)
