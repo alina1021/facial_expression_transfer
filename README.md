@@ -192,8 +192,8 @@ Increasing the number of epochs will help to reduce the pixelation and blurrines
 
 ## Requirements
 - [Anaconda / Python 3.5](https://www.continuum.io/downloads)
-- [TensorFlow 1.2](https://www.tensorflow.org/)
-- [OpenCV 3.0](http://opencv.org/)
+- [TensorFlow 1.12](https://www.tensorflow.org/)
+- [OpenCV 3.1](http://opencv.org/)
 - [Dlib 19.4](http://dlib.net/)
 
 ## Acknowledgments
