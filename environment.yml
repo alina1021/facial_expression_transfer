@@ -1,0 +1,51 @@
+name: facial_expression_transfer
+channels:
+  - menpo
+  - conda-forge
+  - defaults
+dependencies:
+  - ca-certificates=2018.11.29=ha4d7672_0
+  - certifi=2018.8.24=py35_1001
+  - hdf5=1.8.19=0
+  - jpeg=9b=0
+  - libgfortran=3.0.0=1001
+  - openssl=1.0.2l=0
+  - pip=9.0.1=py35_1
+  - python=3.5.3=1
+  - setuptools=27.2.0=py35_0
+  - sqlite=3.13.0=0
+  - wheel=0.29.0=py35_0
+  - zlib=1.2.8=3
+  - blas=1.0=mkl
+  - bzip2=1.0.6=3
+  - libpng=1.6.27=0
+  - mkl=2017.0.3=0
+  - numpy=1.13.0=py35_0
+  - readline=6.2=2
+  - tk=8.5.18=0
+  - xz=5.2.2=1
+  - boost=1.59.0=py35_0
+  - dlib=19.4=py35_0
+  - opencv3=3.1.0=py35_0
+  - tbb=4.3_20141023=0
+  - pip:
+    - absl-py==0.7.0
+    - astor==0.7.1
+    - backports.weakref==1.0rc1
+    - bleach==1.5.0
+    - gast==0.2.2
+    - grpcio==1.18.0
+    - h5py==2.9.0
+    - html5lib==0.9999999
+    - imutils==0.4.3
+    - keras-applications==1.0.7
+    - keras-preprocessing==1.0.9
+    - markdown==2.6.8
+    - protobuf==3.6.1
+    - six==1.10.0
+    - tensorboard==1.12.2
+    - tensorflow==1.12.0
+    - termcolor==1.1.0
+    - werkzeug==0.12.2
+prefix: /anaconda3/envs/facial_expression_transfer
+
